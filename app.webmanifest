@@ -5,7 +5,7 @@
     "scope": "/notes",
     "display": "standalone",
     "background_color": "#333",
-    "theme_color": "#acf",
+    "theme_color": "#cce",
     "categories": ["productivity"],
     "icons": [
         {
