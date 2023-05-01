@@ -77,12 +77,10 @@ window.addEventListener('load', function(){
     dbNotes = (stNotes == null) ? [] : JSON.parse(stNotes);
 
     if(dbNotes.length == 0){
-        let dt0 = {id: 1, text: "Apa aja deh dong\n123\nabc", backgroundColor: '#acf', x: 100, y: 100};
+        let dt0 = {id: 1, text: "Hello world!", backgroundColor: '#acf', x: 100, y: 100};
         dbNotes.push(dt0);
-        let dt1 = {id: 2, text: "Apa aja deh\n123\nabc", backgroundColor: '#fac', x: 500, y: 400};
-        dbNotes.push(dt1);
-        let dt2 = {id: 3, text: "Apa aja dong\n555\nabc", backgroundColor: '#afc', x: 400, y: 100};
-        dbNotes.push(dt2);
+
+        localStorage.setItem('notes', JSON.stringify(dbNotes));
     }    
 
     const editItem = function(id, text, bgColor){
