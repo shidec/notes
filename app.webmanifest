@@ -1,9 +1,9 @@
 {
     "name": "Notes",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": "/notes",
+    "scope": "/notes",
     "display": "standalone",
-    "background": "#333",
+    "background_color": "#333",
     "icons": [
         {
            "src": "icons/512.png",
