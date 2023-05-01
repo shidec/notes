@@ -22,8 +22,8 @@
      ],
      "protocol_handlers": [
           {
-            "protocol": "https",
-            "url": "shidec.github.io/notes"
+            "protocol": "web+notes",
+            "url": "note?id=%s"
           }
         ]
  }
