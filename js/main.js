@@ -3,7 +3,7 @@ import Note from './Note.js';
 'use strict';
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("./serviceworker.js");
+    navigator.serviceWorker.register("js/serviceworker.js");
  }
 
 const notes = [];
