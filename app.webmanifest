@@ -6,6 +6,7 @@
     "display": "standalone",
     "background_color": "#333",
     "theme_color": "#acf",
+    "categories": ["productivity"],
     "icons": [
         {
            "src": "icons/512.png",
