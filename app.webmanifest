@@ -19,5 +19,11 @@
            "sizes": "512x512",
            "purpose": "maskable"
         }
-     ]
+     ],
+     "protocol_handlers": [
+          {
+            "protocol": "https",
+            "url": "shidec.github.io/notes"
+          }
+        ]
  }
