@@ -55,6 +55,7 @@ class Note{
         const btnNoteDelete = new Image(24, 24);
         btnNoteDelete.src = 'img/delete.png';
         btnNoteDelete.title = 'Delete';
+        btnNoteDelete.alt = 'Delete';
         btnNoteDelete.className = 'btn-xs';
         btnNoteDelete.addEventListener('click', function(){
             if(confirm('Bener mau dihapus?')){
@@ -66,6 +67,7 @@ class Note{
         const btnNoteEdit = new Image(24, 24);
         btnNoteEdit.src = 'img/edit.png';
         btnNoteEdit.title = 'Edit';
+        btnNoteEdit.alt = 'Edit';
         btnNoteEdit.className = 'btn-xs';
         btnNoteEdit.style.float = 'right';
         btnNoteEdit.addEventListener('click', function(){
