@@ -2,7 +2,7 @@
     "name": "Notes",
     "id": "/notes",
     "start_url": "/notes",
-    "scope": "/notes",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#333",
     "theme_color": "#cce",

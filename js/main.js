@@ -5,7 +5,7 @@ import Note from './Note.js';
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register("serviceworker.js", 
     {
-        scope: '/notes/'
+        scope: '/notes'
     });
  }
 
