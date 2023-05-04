@@ -28,6 +28,8 @@ class Note{
         
         const toolbarNote = document.createElement('div');
         toolbarNote.className = 'toolbar-note';
+
+        //--add event to handle mouse drag
         toolbarNote.addEventListener('mousedown', function(e){
             this.startX = e.pageX;
             this.startY = e.pageY;
@@ -44,6 +46,33 @@ class Note{
         });
 
         toolbarNote.addEventListener('mouseup', function(e){
+            self.x = self.newX;
+            self.y = self.newY;
+
+            self.updatePositionItem(self.id);
+            this.startX = 0;
+            this.startY = 0;
+        });
+
+        //--add event to handle touch
+        //--add event to handle mouse drag
+        toolbarNote.addEventListener('touchstart', function(e){
+            this.startX = e.touches[0].pageX;
+            this.startY = e.touches[0].pageY;
+        });
+
+        toolbarNote.addEventListener('touchmove', function(e){
+            
+            if(this.startX > 0 && this.startY > 0){
+                self.newX = self.x - this.startX + e.touches[0].pageX;
+                self.newY = self.y - this.startY + e.touches[0].pageY;
+
+                containerNote.style.left = self.newX + 'px';
+                containerNote.style.top = self.newY + 'px';
+            }
+        });
+
+        toolbarNote.addEventListener('touchend', function(e){
             self.x = self.newX;
             self.y = self.newY;
 

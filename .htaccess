@@ -1,1 +1,2 @@
+# add header "Service-Worker-Allowed" header , only work on Apache web server 
 Header set Service-Worker-Allowed "/notes"

@@ -4,7 +4,7 @@ import Note from './Note.js';
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register("/notes/serviceworker.js");
- }
+}
 
 const notes = [];
 let dbNotes;
@@ -26,7 +26,7 @@ window.addEventListener('load', function(){
     const btnColors = document.querySelectorAll('.btnColors');
 
     btnColors.forEach(item => item.addEventListener('click', function(){
-        textEdit.style.backgroundColor = this.getAttribute('data-color');
+        textEdit.style.backgroundColor = this.style.backgroundColor;
     }));
 
     btnAdd.addEventListener('click', function(){
